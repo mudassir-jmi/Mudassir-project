@@ -145,8 +145,106 @@ header{
 }
 
 /* Home page img section */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.home-container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-.container-1 {
+.home-container .home-card {
+    position: relative;
+    max-width: 450px;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+.home-container .home-card .imgBx {
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+ .home-container .home-card .imgBx img {
+    /* max-width: 100%; */
+    width: 370px;
+    height: 517px;
+    /* background: url(IMG_20210827_195434); */
+    filter: drop-shadow(4px 4px 32px rgba(0, 0, 0, 0.25));
+}
+.home-container .home-card .home-text {
+    width: 590px;
+    height: 268px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #000000;
+
+} 
+.home-sub {
+    width: 304px;
+    height: 38px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #4D4D4D;
+}
+
+@media (max-width:991px) {
+    .home-container {
+        flex-direction: column;
+    }
+}
+@media (max-width:768px) {
+    .home-container {
+        flex-direction: column;
+    }
+    .home-container .home-card {
+        flex-direction: column;
+        max-width: 350px;
+        margin-right: 50px;
+    }
+    .home-container .home-card .imgBx img {
+       max-width: 200%;
+    }
+    .home-container .home-card .home-text {
+        margin-left: 0px;
+        width: 300px;
+        height: 150px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container-1 {
     height: 400px;
     width: 800px;
     background-color: #ECFBED;
@@ -187,6 +285,8 @@ header{
     position: relative;
     bottom: 370px;
     left: 320px;
+    padding: 8px;
+    display: inline;
 }
 
 .verical-description {
@@ -195,14 +295,15 @@ header{
     width: 400px;
     bottom: 710px;
     left: 515px;
-}
+} */
 
+/* home page card */
 .description-2 {
     font-size: 45px;
     word-spacing: 10px;
     font-weight: bolder;
     position: relative;
-    top: 200px;
+    top: 250px;
     left: 265px;
     width: 500px;
 }
@@ -281,7 +382,7 @@ header{
     font-weight: bold;
 }
 
-.card {
+.help-card {
     margin: 50px;
 }
 
@@ -360,6 +461,55 @@ header{
     bottom: 130px;
     width: 120px;
 }
+
+@media screen and (max-width:768px) {
+  .container-1 {
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 28px;
+    text-align: justify;
+  }
+  .saloni-img {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .description-2 {
+    font-size: 72px;
+    word-spacing: 10px;
+    font-weight: 700;
+    position: relative;
+    top: 800px;
+    left: 100px;
+    width: 400px;
+    height: 172px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+  }
+  .container-2 {
+    height: 300px;
+    width: 400px;
+    background-color: #ECFBED;
+    position: relative;
+    left: 90px;
+    top: 800px;
+  }
+  .filler-1 .after {
+    position: relative;
+  }
+}
+
+
+/* Book a Free Call */
 .description-5 {
     font-size: 45px;
     word-spacing: 10px;
@@ -1322,28 +1472,6 @@ input[type='radio'] {
 }
 
 /* Media Query */
-
-@media screen and (max-width:900){
-    .saloni-img {
-       display: block;
-       max-width: 100%;
-    }
-    .navbar li {
-        float: left;
-        margin: 10px 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar{
-        float: none;
-        clear: both;
-    }
-    .navbar ul nav {
-        float: none;
-    }
-}
-
 
 @media (max-width: 1640px){
 	.home{
