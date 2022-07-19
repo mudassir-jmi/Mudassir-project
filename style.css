@@ -217,8 +217,8 @@ header{
         max-width: 350px;
         margin-right: 50px;
     }
-    .home-container .home-card .imgBx img {
-       max-width: 200%;
+    .home-container .home-card .imgBx {
+       max-width: 100%;
     }
     .home-container .home-card .home-text {
         margin-left: 0px;
