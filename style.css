@@ -177,6 +177,8 @@ header{
     width: 370px;
     height: 517px;
     /* background: url(IMG_20210827_195434); */
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: drop-shadow(4px 4px 32px rgba(0, 0, 0, 0.25));
 }
 .home-container .home-card .home-text {
