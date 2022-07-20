@@ -91,10 +91,8 @@ header{
 }
 .logo{
 	max-width: 100%;
-	/* width: 165px; */
 	height: auto;
     color: #000;
-    /* margin-right: 60px; */
     width: 77px;
     height: 32px;
     font-family: 'Noto Sans';
@@ -239,15 +237,6 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* .container-1 {
     height: 400px;
     width: 800px;
@@ -301,15 +290,24 @@ header{
     left: 515px;
 } */
 
+
 /* home page card */
 .description-2 {
-    font-size: 45px;
+    /* font-size: 45px;
     word-spacing: 10px;
     font-weight: bolder;
     position: relative;
-    top: 250px;
-    left: 265px;
-    width: 500px;
+    left: 200px;
+    width: 500px; */
+    width: 770px;
+    height: 172px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    color: #000000;
+    margin-left: 200px;
 }
 
 .container-2 {
@@ -317,8 +315,8 @@ header{
     width: 800px;
     background-color: #ECFBED;
     position: relative;
-    left: 340px;
-    top: 400px;
+    left: 275px;
+    top: 250px;
 }
 
 .filler-1 {
@@ -351,7 +349,48 @@ header{
     left: 320px;
     bottom: 350px;
 }
+@media (max-width:991px) {
+    .description-2 {
+        margin-left: 10px;
+        width: 300px;
+        height: 150px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    .container-2 {
+        height: 350px;
+        width: 400px;
+        position: relative;
+        left: 100px;
+        top: 250px;
+        flex-direction: column;
+    }
+    .container-2 .filler-1 {
+        width: 370px;
+    }
+    .filler-1 .before {
+        position: relative;
+        /* bottom: -50px; */
+        left: -500px;
+        width: 100px;
+        border-left: 4px solid #55C595;
+        font-size: 25px;
+        padding-left: 6px;
+    }
+    .container-2 .filler-2 {
+        width: 370px;
+        position: relative;
+        top: -30px;
+        left: -100px;
+    }
+}
 
+/* Help page in home page */
 .description-3 {
     font-size: 45px;
     word-spacing: 10px;
@@ -395,8 +434,10 @@ header{
     width: 750px;
     background-color: #ECFBED;
     position: absolute;
-    top: 2200px;
+    top: 2500px;
     left: 100px;
+    /* margin-top: 650px;
+    margin-left: 200px; */
 }
 
 .testimonial-img {
@@ -466,52 +507,6 @@ header{
     width: 120px;
 }
 
-@media screen and (max-width:768px) {
-  .container-1 {
-    height: 200px;
-    width: 400px;
-    position: relative;
-    top: 200px;
-    left: 200px;
-  }
-  .intro {
-    font-size: 20px;
-  }
-  .description {
-    font-size: 28px;
-    text-align: justify;
-  }
-  .saloni-img {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .description-2 {
-    font-size: 72px;
-    word-spacing: 10px;
-    font-weight: 700;
-    position: relative;
-    top: 800px;
-    left: 100px;
-    width: 400px;
-    height: 172px;
-    font-family: 'Noto Sans';
-    font-style: normal;
-  }
-  .container-2 {
-    height: 300px;
-    width: 400px;
-    background-color: #ECFBED;
-    position: relative;
-    left: 90px;
-    top: 800px;
-  }
-  .filler-1 .after {
-    position: relative;
-  }
-}
-
 
 /* Book a Free Call */
 .description-5 {
@@ -533,10 +528,11 @@ header{
     height: 450px;
     width: 100%;
     position: absolute;
-    top: 2700px;
+    top: 3000px;
     display: flex;
     justify-items: center;
 }
+
 .description-5,.button-2,.paragraph-3 {
     margin-top: 50px;
     margin-left: 80px;
@@ -557,7 +553,7 @@ header{
 }
 .container-6 {
     position: absolute;
-    top: 3200px;
+    top: 3430px;
     max-width: 100%;
 }
 .description-6 {
@@ -874,7 +870,6 @@ button[type="submit"] {
     line-height: 120%;
 }
 
-
 .exp-text1 {
     position: relative;
     bottom: 1060px;
@@ -1159,7 +1154,7 @@ text-align:justify;
     color: #000;
 }
 
-@media screen and (max-width:767px)
+@media screen and (max-width:768px)
 {
 .call-container
 {
