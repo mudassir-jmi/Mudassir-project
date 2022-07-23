@@ -620,11 +620,12 @@ header{
     .testimonial-img {
         display:block;
         order:1;
-        width:85%;
+        width:100%;
         height:250px;
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
+        margin-left: 40px;
     }
     .view-case {
         position: absolute;
@@ -634,10 +635,16 @@ header{
         height: 72px;
     }
     .testimonial_text {
-        /* display:block; */
+        display:block;
         order:2;
         width:100%;
-        flex-direction: column;
+        position: absolute;
+        top: 700px;
+        left: -380px;
+        text-align: justify;
+    }
+    .description-4 {
+        font-size: 50px;
     }
 }
 
@@ -668,7 +675,7 @@ header{
     height: 450px;
     width: 100%;
     position: absolute;
-    top: 3000px;
+    top: 2880px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -709,7 +716,7 @@ header{
         height: auto;
         width: 50%;
         position: absolute;
-        top: 3800px;
+        top: 4000px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -741,23 +748,42 @@ header{
 
 /* Insights section start */
 .card-button {
-    background-color: #55C595;
-    padding: 14px 100px;
-    border-radius: 5px;
+    /* background-color: #55C595; */
+    /* padding: 14px 100px; */
     text-decoration: none;
     color: #ECFBED;
-    font-weight: 800;
-    margin-left: 28px;
+    /* font-weight: 800; */
+    margin-left: 20px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    gap: 8px;
+    width: 272px;
+    height: 48px;
+    background: #55C595;
+    border-radius: 8px;
+
 }
 .container-6 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
     position: absolute;
-    top: 3500px;
+    top: 3400px;
     max-width: 100%;
 }
 .description-6 {
-    font-size: 45px;
-    font-weight: bold;
-    margin: 40px 10px 40px 50px ;
+    width: 293px;
+    height: 86px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    margin-left: 40px;
 }
 .card-description-2 {
     font-size: 25px;
@@ -773,21 +799,27 @@ header{
     display: flex;
     justify-content: center;
 }
+
 .card-2 {
     margin: 50px;
 }
 
 @media (max-width:768px) {
     .container-6 {
+        display: flex;
+        flex-direction: column;
+        order: 1;
         position: absolute;
-        top:5000px;
+        top: 4500px;
         max-width: 100%;
     }
     .description-6 {
-        margin-top: 40px;
+        margin-top: 80px;
+    }
+    .card-container {
+        flex: 1;
     }
 }
-
 
 /* Footer code */
 footer {
@@ -1311,6 +1343,7 @@ margin-bottom:5px;
     transform: scale(1.03);
     transition: all 1s ease;
 }
+
 /* book a free call*/
 .call-container
 {
