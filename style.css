@@ -86,8 +86,8 @@ header{
 	padding: 10px 18%;
 	z-index: 1000;
 	transition: all .35s ease;
-	box-shadow: -3px -3px 7px #ffffff73,
-	2px 2px 5px rgba(94, 104, 121, 0.288);
+	/* box-shadow: -3px -3px 7px #ffffff73,
+	2px 2px 5px rgba(94, 104, 121, 0.288); */
 }
 .logo{
 	max-width: 100%;
@@ -390,110 +390,212 @@ header{
     }
 }
 
-/* Help page in home page */
+/* Help section in home page */
 .description-3 {
-    font-size: 45px;
-    word-spacing: 10px;
-    font-weight: bolder;
     position: relative;
-    top: 620px;
+    top: 500px;
     left: 265px;
-    width: 500px;
+    width: 608px;
+    height: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    color: #000000;
 }
 
 .container-3 {
+    width: 100vw;
+    height: 100vh; 
     position: relative;
-    top: 700px;
+    top: 600px;
+}
+.help-parent {
+    width: 80vw;
+    height: auto;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-.card-title {
-    font-size: 25px;
-    font-weight: bolder;
-    margin-top: 30px;
-}
-
-.card-description {
-    color: rgba(0, 0, 0, 0.692);
-    font-weight: 500;
-}
-
-.read-more {
-    color: #55C595;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .help-card {
-    margin: 50px;
+    height: 200px;
+    flex: 1 1 200px;
+    margin-left: 90px;
 }
+.help-card .card-title {
+    width: 212px;
+    height: 24px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+.help-card .card-description {
+    width: 272px;
+    height: 48px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4D4D4D;
+}
+.help-card .read-more {
+    width: 74px;
+    height: 18px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #55C595;
+}
+@media (max-width:768px) {
+    .description-3 {
+        font-size: 45px;
+        word-spacing: 10px;
+        font-weight: bolder;
+        position: relative;
+        top: 780px;
+        left: 20px;
+        width: 300px;
+    }
+    .container-3 {
+        height: auto;
+        position: relative;
+        top: 830px;
+    }
+    .help-card {
+        margin-top:70px;
+        margin-right: 90px;
+    }
+    
+}
+
+/* testimonial */
 
 .container-4 {
-    height: 400px;
-    width: 750px;
-    background-color: #ECFBED;
+    height: 504px;
+    width: 500px;
     position: absolute;
-    top: 2500px;
-    left: 100px;
-    /* margin-top: 650px;
-    margin-left: 200px; */
-}
+    top: 2270px;
+    left: 200px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-.testimonial-img {
-    position: relative;
-    bottom: 70px;
-    left: 30px;
+    }
+
+.testimonial-img  {
+    position: absolute;
+    width: 500px;
+    height: 504px;
+    left: 10px;
+    top: 0px;
+    background: url('images/testimonial.png'), #D9D9D9;
+    box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.testimonial_text {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .view-case {
-    background-color: #55C595;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ECFBED;
-    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 40px;
+    gap: 8px;
     position: absolute;
-    right: 482px;
-    top: 374px;
+    width: 260px;
+    height: 72px;
+    left: 65px;
+    top: 434px;
+    background: rgba(85, 197, 149, 0.4);
+    backdrop-filter: blur(16px);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
 .description-4 {
-    font-size: 45px;
-    font-weight: bold;
+    width: 450px;
+    height: 86px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    color: #000000;
     position: absolute;
-    bottom: 370px;
+    bottom: 300px;
     left: 550px;
 }
+
 .heading-1 {
-    font-size: 25px;
-    font-weight: bold;
+    width: 500px;
+    height: 36px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
     position: absolute;
     bottom: 270px;
     left: 550px;
-    width: 400px;
 }
 .paragraph-1 {
-    color: rgba(0, 0, 0, 0.692);
-    position: absolute;
+    width: 500px;
+    height: 96px;
+    font-family: 'Noto Sans';
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2D2D2D;
+    position: absolute;
     left: 550px;
     bottom: 150px;
-    width: 500px;
 }
 .heading-2 {
-    font-size: 25px;
-    font-weight: bold;
     position: absolute;
     bottom: 80px;
     left: 550px;
+    width: 103px;
+    height: 24px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #2D2D2D;
 }
 .paragraph-2 {
-    color: rgba(0, 0, 0, 0.692);
     position: absolute;
-    font-weight: 400;
+    bottom: 58px;
     left: 550px;
-    bottom: 30px;
-    width: 300px;
+    width: 148px;
+    height: 16px;
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2D2D2D;
 }
 .arrow {
     margin: 0px 20px;
@@ -503,24 +605,62 @@ header{
 .navigation-arrow {
     position: relative;
     left: 540px;
-    bottom: 130px;
+    bottom: 50px;
     width: 120px;
+    color: #55C595;
 }
 
+@media (max-width:768px) {
+.container-4 {
+    flex-flow: nowrap;
+    position: absolute;
+    top: 3300px;
+    left: -160px;
+    }
+    .testimonial-img {
+        display:block;
+        order:1;
+        width:85%;
+        height:250px;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .view-case {
+        position: absolute;
+        left: 150px;
+        top: 190px;
+        width: 260px;
+        height: 72px;
+    }
+    .testimonial_text {
+        /* display:block; */
+        order:2;
+        width:100%;
+        flex-direction: column;
+    }
+}
 
 /* Book a Free Call */
-.description-5 {
-    font-size: 45px;
-    word-spacing: 10px;
-    font-weight: bolder;
-}
+
 .button-2 {
-    background-color: #55C595;
-    padding: 15px 50px;
-    border-radius: 5px;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+    width: 230px;
+    height: 64px;
+    background: #55C595;
+    box-shadow: 0px 8px 16px rgba(85, 197, 149, 0.12), inset 0px 0px 16px rgba(85, 197, 149, 0.5);
+    border-radius: 8px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
     
 }
 .container-5 {
@@ -530,10 +670,32 @@ header{
     position: absolute;
     top: 3000px;
     display: flex;
-    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.description-5,.button-2,.paragraph-3 {
+.description-5 {
+    width: 545px;
+    height: 72px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 100%;
+    margin-left: 80px;
+}
+.paragraph-3 {
+    width: 590px;
+    height: 87px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    margin-left: 80px;
+}
+
+.button-2 {
     margin-top: 50px;
     margin-left: 80px;
 }
@@ -542,6 +704,42 @@ header{
     margin-left: 120px;
 }
 
+@media (max-width:768px) {
+    .container-5 {
+        height: auto;
+        width: 50%;
+        position: absolute;
+        top: 3800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .description-5 {
+        width: 350px;
+        height: 62px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        margin-left:250px;
+    }
+    .paragraph-3 {
+        width: 500px;
+        height: 80px;
+        font-size: 16px;
+        line-height: 100%;
+        position: absolute;
+        left: -75px;
+        text-align: justify !important;
+    }
+    .button-2 {
+        margin-top: 50px;
+        margin-left: 220px;
+    }
+}
+
+/* Insights section start */
 .card-button {
     background-color: #55C595;
     padding: 14px 100px;
@@ -553,7 +751,7 @@ header{
 }
 .container-6 {
     position: absolute;
-    top: 3430px;
+    top: 3500px;
     max-width: 100%;
 }
 .description-6 {
@@ -578,6 +776,18 @@ header{
 .card-2 {
     margin: 50px;
 }
+
+@media (max-width:768px) {
+    .container-6 {
+        position: absolute;
+        top:5000px;
+        max-width: 100%;
+    }
+    .description-6 {
+        margin-top: 40px;
+    }
+}
+
 
 /* Footer code */
 footer {
